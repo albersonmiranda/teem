@@ -1,0 +1,25 @@
+---
+title: Enriquecendo o ensino de frações através da integração da matemática e música
+authors:
+  - name: Alberson Miranda
+    affiliation: Instituto Federal do Espírito Santo
+    roles: writing
+    corresponding: true
+bibliography: config/teem.bib
+csl: config/associacao-brasileira-de-normas-tecnicas.csl
+lang: pt-BR
+date: last-modified
+date-format: long
+toc: true
+number-sections: true
+---
+
+# INTRODUÇÃO
+
+[Escrever intro]
+
+# FUNDAMENTAÇÃO TEÓRICA
+
+As chamadas tendências em educação matemática são categorizações que buscam identificar e descrever as diferentes abordagens e perspectivas que norteiam a pesquisa e o ensino da matemática [@mello_tendencias_2007]. Nesse sentido, uma das tendências que surge a partir da busca de soluções para os problemas da Educação Matemática é a interdisciplinaridade.
+
+A interdisciplinaridade é uma abordagem que visa a integração de diferentes áreas do conhecimento, com o objetivo de promover uma aprendizagem mais significativa e contextualizada. Esse conceito 

@@ -1,0 +1,19 @@
+project:
+  type: manuscript
+
+manuscript:
+  article: artigo.qmd
+
+format:
+  html:
+    comments:
+      hypothesis: true
+  docx: default
+  pdf:
+    documentclass: scrreprt
+
+execute:
+  freeze: auto
+
+
+
