@@ -52,3 +52,8 @@ Nesse sentido, a integração com a arte é uma das formas de promover a interdi
 1. **Integração co-igual cognitiva**: a arte é integrada com outros aspectos do currículo e os alunos são exigidos a usar habilidades de pensamento de ordem superior e qualidades estéticas para obter um entendimento mais aprofundado de um conceito acadêmico específico;
 
 As três primeiras abordagens utilizam a arte como uma ferramenta. Já a quarta abordagem, a integração co-igual cognitiva, é a mais exigente, demandando do professor não apenas o conhecimento, habilidade e confiança no seu conteúdo, mas também na forma de arte escolhida. Além disso, requer tempo para planejar e efetivamente preparar aulas que integrem a arte com o conteúdo acadêmico [@lovemore_enriching_2021].
+
+# REFERÊNCIAS {-}
+
+::: {#refs}
+:::
