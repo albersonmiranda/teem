@@ -1,10 +1,15 @@
 ---
 title: Enriquecendo o ensino de frações através da integração da matemática e música
-authors:
-  - name: Alberson Miranda
-    affiliation: Instituto Federal do Espírito Santo
-    roles: writing
-    corresponding: true
+author:
+  name: Alberson Miranda
+  orcid: https://orcid.org/0000-0001-9252-4175
+  email: alberson.miranda@estudante.ifes.edu.br
+  affiliation:
+    - name: Instituto Federal do Espírito Santo
+      department: Licenciatura em Matemática
+      city: Vitória
+      state: ES
+thanks: Trabalho desenvolvido para a disciplina de Tópicos Especiais em Educação Matemática, ministrada pela professora Débora Domingues, no curso de Licenciatura em Matemática do Instituto Federal do Espírito Santo.
 bibliography: config/teem.bib
 csl: config/associacao-brasileira-de-normas-tecnicas.csl
 lang: pt-BR
@@ -16,10 +21,34 @@ number-sections: true
 
 # INTRODUÇÃO
 
-[Escrever intro]
+A música é um instrumento poderoso para promoção dessa interdisciplinaridade, não apenas porque ela está enraizada no imaginário de cada criança, que desde o berço escuta o canto da mãe ao ninar, mas também por ser uma forma de arte que envolve a matemática em sua estrutura.
 
 # FUNDAMENTAÇÃO TEÓRICA
 
 As chamadas tendências em educação matemática são categorizações que buscam identificar e descrever as diferentes abordagens e perspectivas que norteiam a pesquisa e o ensino da matemática [@mello_tendencias_2007]. Nesse sentido, uma das tendências que surge a partir da busca de soluções para os problemas da Educação Matemática é a interdisciplinaridade.
 
-A interdisciplinaridade é uma abordagem que visa a integração de diferentes áreas do conhecimento, com o objetivo de promover uma aprendizagem mais significativa e contextualizada. Esse conceito 
+A interdisciplinaridade é uma abordagem que visa a integração de diferentes áreas do conhecimento, com o objetivo de promover uma aprendizagem mais significativa e contextualizada. Esse conceito envolve ao mesmo tempo teoria e ação, uma vez que exige mais a atuação do professor em sala de aula do que a simples união de duas ou mais disciplinas ou áreas do saber em atividades [@mello_tendencias_2007].
+
+Essa interdisciplinaridade é alcançada a partir do rompimento com o isolamento e a fragmentação dos conteúdos, possibilitando a transferência de aprendizagem de uma situação para a outra e a construção de significado em cima desse aprendizado transferido [@souto_interdisciplinaridade_2010]. Para que isso seja possível, @souto_interdisciplinaridade_2010 lista algumas condições que a atividade deve atender, como:
+
+1. O tema deve ser algo conhecido dos alunos;
+1. Ser de discussão possível;
+1. Ter valor em si mesmo;
+1. Ser capaz de criar conceitos matemáticos;
+1. desenvolver habilidades matemáticas;
+1. e privilegiar a concretude social.
+
+Nesse sentido, a integração com a arte é uma das formas de promover a interdisciplinaridade, uma vez que ela é uma forma de expressão humana que permeia o indivíduo em toda cultura e sociedade. De acordo com @robinson_arts_2013, integração com artes pode ser definida a partir de três características que devem ser consideradas para que seja alcançada uma interdisciplinaridade de alta qualidade, são elas:
+
+1. Aprendizado *através* e *com* artes;
+1. Artes como processo de conexão curricular;
+1. Artes como engajamento colaborativo.
+
+@bresler_subservient_1995 realizou um estudo etnográfico em três escolas K-8 nos Estados Unidos^[K-8 é uma abreviação para *kindergarten* (pré-escola) até o 8º ano do ensino fundamental.], incluindo observações de aulas; entrevistas com professores, diretores e artistas residentes; e revisão de materiais curriculares. A partir desse estudo, a autora definiu quarto abordagens de integração com a arte, sintetizadas por @robinson_arts_2013, são elas:
+
+1. **Integração subserviente**: a arte é apenas um extra, usada para ilustrar ou reforçar conceitos de outras disciplinas;
+1. **Integração afetiva**: a integração se dá por meio da imersão e da consequente reação dos alunos à arte, como música e peças artísticas, complementando o currículo de outras disciplinas;
+1. **Integração social**: baseada em atividades, utilizando a arte para promover a interação entre os alunos e aumentar a participação parental, como em peças de teatro ou música em grupo;
+1. **Integração co-igual cognitiva**: a arte é integrada com outros aspectos do currículo e os alunos são exigidos a usar habilidades de pensamento de ordem superior e qualidades estéticas para obter um entendimento mais aprofundado de um conceito acadêmico específico;
+
+As três primeiras abordagens utilizam a arte como uma ferramenta. Já a quarta abordagem, a integração co-igual cognitiva, é a mais exigente, demandando do professor não apenas o conhecimento, habilidade e confiança no seu conteúdo, mas também na forma de arte escolhida. Além disso, requer tempo para planejar e efetivamente preparar aulas que integrem a arte com o conteúdo acadêmico [@lovemore_enriching_2021].
