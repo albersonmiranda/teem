@@ -21,10 +21,13 @@ number-sections: true
 
 # INTRODUÇÃO
 
-A música é um instrumento poderoso para promoção dessa interdisciplinaridade, não apenas porque ela está enraizada no imaginário de cada criança, que desde o berço escuta o canto da mãe ao ninar, mas também por ser uma forma de arte que envolve a matemática em sua estrutura.
+Música pode ser um instrumento poderoso nas mãoes do professor para promoção de interdisciplinaridade, não apenas porque ela está enraizada no imaginário de cada criança, que desde o berço escuta o canto da mãe ao ninar, mas também por ser uma forma de arte que envolve a matemática em sua estrutura.
+
+Neste trabalho, exploro os conceitos de interdisciplinaridade e integração com artes para enriquecer o ensino de frações. Para isso, apresento uma proposta de atividade que integra a matemática e a música, com o objetivo de promover a aprendizagem de frações de forma mais significativa e contextualizada.
 
 # FUNDAMENTAÇÃO TEÓRICA
 
+## Interdisciplinaridade e integração com artes
 As chamadas tendências em educação matemática são categorizações que buscam identificar e descrever as diferentes abordagens e perspectivas que norteiam a pesquisa e o ensino da matemática [@mello_tendencias_2007]. Nesse sentido, uma das tendências que surge a partir da busca de soluções para os problemas da Educação Matemática é a interdisciplinaridade.
 
 A interdisciplinaridade é uma abordagem que visa a integração de diferentes áreas do conhecimento, com o objetivo de promover uma aprendizagem mais significativa e contextualizada. Esse conceito envolve ao mesmo tempo teoria e ação, uma vez que exige mais a atuação do professor em sala de aula do que a simples união de duas ou mais disciplinas ou áreas do saber em atividades [@mello_tendencias_2007].
@@ -52,6 +55,12 @@ Nesse sentido, a integração com a arte é uma das formas de promover a interdi
 1. **Integração co-igual cognitiva**: a arte é integrada com outros aspectos do currículo e os alunos são exigidos a usar habilidades de pensamento de ordem superior e qualidades estéticas para obter um entendimento mais aprofundado de um conceito acadêmico específico;
 
 As três primeiras abordagens utilizam a arte como uma ferramenta. Já a quarta abordagem, a integração co-igual cognitiva, é a mais exigente, demandando do professor não apenas o conhecimento, habilidade e confiança no seu conteúdo, mas também na forma de arte escolhida. Além disso, requer tempo para planejar e efetivamente preparar aulas que integrem a arte com o conteúdo acadêmico [@lovemore_enriching_2021].
+
+A essa altura, é importante destacar que a integração com a arte se localiza na esfera pedagógica (micro), estando associada mas não se confundindo com a educação omnilateral, que é um conceito melhor entendido na esfera macro. O objetivo da educação omnilateral é a formação integral do ser humano, que envolve o desenvolvimento de todas as suas potencialidades, incluindo a intelectual, a física, a artística, a moral e a ética. Esse objetivo é alcançado através do desenvolvimento de "processos pedagógicos que garantam, ao final do processo educativo, o acesso efetivamente democrático ao conhecimento na sua mais elevada universalidade", que se dão em oposição ao tipo de educação presente no seio das sociedades capitalistas [@maciel_educacao_2015; apud @frigotto_trabalho_2012].
+
+## Frações de compasso e valores de notas musicais
+
+Qualquer aluno que tenha escolhido música esperando não encontrar matemática ficará profundamente desapontado. Na maior parte dos livros e apostilas de teoria musical geral, logo no capítulo 1, o aluno será introduzido aos conceitos de figuras rítmicas e fórmulas de compasso.
 
 # REFERÊNCIAS {-}
 
