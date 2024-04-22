@@ -12,6 +12,8 @@ format:
   pdf:
     documentclass: scrreprt
 
+editor:
+  render-on-save: true
 execute:
   freeze: auto
 
