@@ -54,6 +54,9 @@ div.csl-indent {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script async="" src="https://hypothes.is/embed.js"></script>
 <script>
   window.document.addEventListener("DOMContentLoaded", function (_event) {
@@ -61,6 +64,35 @@ div.csl-indent {
   });
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta name="citation_title" content="Enriquecendo o ensino de frações através da integração da matemática e música">
 <meta name="citation_author" content="Alberson Miranda">
@@ -111,7 +143,7 @@ div.csl-indent {
                 <div>
             <div class="quarto-title-meta-heading">Data de Publicação</div>
             <div class="quarto-title-meta-contents">
-              <p class="date">22 de abril de 2024</p>
+              <p class="date">24 de abril de 2024</p>
             </div>
           </div>
           
@@ -138,6 +170,8 @@ div.csl-indent {
   <li><a href="#interdisciplinaridade-e-integração-com-artes" id="toc-interdisciplinaridade-e-integração-com-artes" class="nav-link" data-scroll-target="#interdisciplinaridade-e-integração-com-artes"><span class="header-section-number">2.1</span> Interdisciplinaridade e integração com artes</a></li>
   <li><a href="#frações-de-compasso-e-valores-de-notas-musicais" id="toc-frações-de-compasso-e-valores-de-notas-musicais" class="nav-link" data-scroll-target="#frações-de-compasso-e-valores-de-notas-musicais"><span class="header-section-number">2.2</span> Frações de compasso e valores de notas musicais</a></li>
   </ul></li>
+  <li><a href="#metodologia" id="toc-metodologia" class="nav-link" data-scroll-target="#metodologia"><span class="header-section-number">3</span> METODOLOGIA</a></li>
+  <li><a href="#conclusão" id="toc-conclusão" class="nav-link" data-scroll-target="#conclusão"><span class="header-section-number">4</span> CONCLUSÃO</a></li>
   <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">REFERÊNCIAS</a></li>
   </ul>
 </nav>
@@ -153,8 +187,8 @@ div.csl-indent {
 
 <section id="introdução" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> INTRODUÇÃO</h1>
-<p>Música pode ser um instrumento poderoso nas mãoes do professor para promoção de interdisciplinaridade, não apenas porque ela está enraizada no imaginário de cada criança, que desde o berço escuta o canto da mãe ao ninar, mas também por ser uma forma de arte que envolve a matemática em sua estrutura.</p>
-<p>Neste trabalho, exploro os conceitos de interdisciplinaridade e integração com artes para enriquecer o ensino de frações. Para isso, apresento uma proposta de atividade que integra a matemática e a música, com o objetivo de promover a aprendizagem de frações de forma mais significativa e contextualizada.</p>
+<p>Música pode ser um instrumento poderoso nas mãos do professor para promoção de interdisciplinaridade, não apenas porque ela está enraizada no imaginário de cada criança, que desde o berço escuta o canto da mãe ao ninar, mas também por ser uma forma de arte que envolve a matemática em sua estrutura.</p>
+<p>Neste trabalho, exploro os conceitos de interdisciplinaridade e integração com artes para enriquecer o ensino de frações. Além disso, apresento uma proposta de atividade que integra a matemática e a música, com o objetivo de promover a aprendizagem de frações de forma mais significativa e contextualizada.</p>
 </section>
 <section id="fundamentação-teórica" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> FUNDAMENTAÇÃO TEÓRICA</h1>
@@ -182,15 +216,92 @@ div.csl-indent {
 <li><strong>Integração subserviente</strong>: a arte é apenas um extra, usada para ilustrar ou reforçar conceitos de outras disciplinas;</li>
 <li><strong>Integração afetiva</strong>: a integração se dá por meio da imersão e da consequente reação dos alunos à arte, como música e peças artísticas, complementando o currículo de outras disciplinas;</li>
 <li><strong>Integração social</strong>: baseada em atividades, utilizando a arte para promover a interação entre os alunos e aumentar a participação parental, como em peças de teatro ou música em grupo;</li>
-<li><strong>Integração co-igual cognitiva</strong>: a arte é integrada com outros aspectos do currículo e os alunos são exigidos a usar habilidades de pensamento de ordem superior e qualidades estéticas para obter um entendimento mais aprofundado de um conceito acadêmico específico;</li>
+<li><strong>Integração co-igual cognitiva</strong>: a arte é integrada com outros aspectos do currículo e os alunos são exigidos a usar habilidades de pensamento de ordem superior e qualidades estéticas<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> para obter um entendimento mais aprofundado de um conceito acadêmico específico;</li>
 </ol>
 <p>As três primeiras abordagens utilizam a arte como uma ferramenta. Já a quarta abordagem, a integração co-igual cognitiva, é a mais exigente, demandando do professor não apenas o conhecimento, habilidade e confiança no seu conteúdo, mas também na forma de arte escolhida. Além disso, requer tempo para planejar e efetivamente preparar aulas que integrem a arte com o conteúdo acadêmico <span class="citation" data-cites="lovemore_enriching_2021">(<a href="#ref-lovemore_enriching_2021" role="doc-biblioref">LOVEMORE; ROBERTSON; GRAVEN, 2021</a>)</span>.</p>
 <p>A essa altura, é importante destacar que a integração com a arte se localiza na esfera pedagógica (micro), estando associada mas não se confundindo com a educação omnilateral, que é um conceito melhor entendido na esfera macro. O objetivo da educação omnilateral é a formação integral do ser humano, que envolve o desenvolvimento de todas as suas potencialidades, incluindo a intelectual, a física, a artística, a moral e a ética. Esse objetivo é alcançado através do desenvolvimento de “processos pedagógicos que garantam, ao final do processo educativo, o acesso efetivamente democrático ao conhecimento na sua mais elevada universalidade”, que se dão em oposição ao tipo de educação presente no seio das sociedades capitalistas <span class="citation" data-cites="maciel_educacao_2015 frigotto_trabalho_2012">(<a href="#ref-maciel_educacao_2015" role="doc-biblioref">MACIEL, 2015</a>; apud <a href="#ref-frigotto_trabalho_2012" role="doc-biblioref">FRIGOTTO; CIAVATTA, 2012</a>)</span>.</p>
+<p>Não obstante não se tratar de atividades ao nível de uma educação omnilateral, a integração com a arte traz consigo potencial para facilitar o conhecimento mais profundo dos conceitos, realizar conexões entre diferentes áreas do conhecimento de forma mais significativa e destacar os relacionamentos entre as disciplinas e os temas culturais da sociedade. Além disso, há também evidências de benefícios comportamentais e de relacionamento, como redução de ansiedade e aumento da participação e colaboração, não apenas entre alunos, mas também entre professores.<span class="citation" data-cites="lovemore_enriching_2021">(<a href="#ref-lovemore_enriching_2021" role="doc-biblioref">LOVEMORE; ROBERTSON; GRAVEN, 2021</a>)</span>.</p>
 </section>
 <section id="frações-de-compasso-e-valores-de-notas-musicais" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="frações-de-compasso-e-valores-de-notas-musicais"><span class="header-section-number">2.2</span> Frações de compasso e valores de notas musicais</h2>
 <p>Qualquer aluno que tenha escolhido música esperando não encontrar matemática ficará profundamente desapontado. Na maior parte dos livros e apostilas de teoria musical geral, logo no capítulo 1, o aluno será introduzido aos conceitos de figuras rítmicas e fórmulas de compasso.</p>
+<p>Toda e qualquer nota musical possui um valor rítmico associado, que é a duração que ela deve ser tocada (<a href="#fig-valores" class="quarto-xref">Figura&nbsp;1 (a)</a>). Cada nota musical vale a metade da nota que a sucede, e o dobro da nota que a antecede. Essa relação hierárquica baseada em subdivisões e multiplicações por 2 é a base do sistema de notação musical (<a href="#fig-hierarquia" class="quarto-xref">Figura&nbsp;1 (b)</a>).</p>
+<div id="fig-notas" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-notas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-notas" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div id="fig-valores" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-valores-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="img/valores.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="fig-notas"><img src="img/valores.png" class="img-fluid figure-img" data-ref-parent="fig-notas" width="300"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-valores-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Notas musicais e seus valores rítmicos
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-notas" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div id="fig-hierarquia" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-hierarquia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="img/hierarquia.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="fig-notas"><img src="img/hierarquia.png" class="img-fluid figure-img" data-ref-parent="fig-notas" width="400"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-hierarquia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Relação hierárquica entre as notas musicais
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-notas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Notas musicais e suas relações hierárquicas de duração.
+</figcaption>
+</figure>
+</div>
+<p>A fração de compasso (<a href="#fig-fração" class="quarto-xref">Figura&nbsp;2</a>) é a responsável por indicar a quantidade de tempos que cada compasso possui, e a unidade de tempo que será utilizada para contar esses tempos. O numerador da fração indica a quantidade de tempos que cabem e cada compasso, enquanto o denominador indica a unidade de tempo que será utilizada para contar esses tempos. Por exemplo, uma fração de compasso <span class="math inline">\(4/4\)</span> indica que cada compasso possui <span class="math inline">\(4\)</span> tempos, e que a unidade de tempo é a semínima (<span class="math inline">\(1/4\)</span>).</p>
+<div id="fig-fração" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fração-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="img/fração.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3"><img src="img/fração.png" class="img-fluid figure-img" width="300"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fração-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2: Exemplos de frações de compasso
+</figcaption>
+</figure>
+</div>
+<p>Então, se um compasso tiver fração <span class="math inline">\(3/4\)</span>, isso significa que ele terá 3 tempos, e que a unidade de tempo é a semínima. Esse compasso pode conter, por exemplo, três semínimas ou uma mínima e uma semínima (<a href="#fig-fração-2" class="quarto-xref">Figura&nbsp;3</a>).</p>
+<div id="fig-fração-2" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fração-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="img/fração_2.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4"><img src="img/fração_2.png" class="img-fluid figure-img" width="300"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fração-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3: Exemplos de compassos <span class="math inline">\(3/4\)</span>
+</figcaption>
+</figure>
+</div>
+<p>Fica evidente que a teoria musical conta com conceitos e notação matemática, de forma que a escolha da música como vetor para a integração com a arte se mostra vantajosa para o ensino de frações, sem qualquer necessidade de extrapolação de contexto — a matemática já está lá.</p>
+<p>A equivalência se dá diretamente:</p>
+<p><span id="eq-fracao"><span class="math display">\[
+\begin{aligned}
+  \text{1 inteiro} &amp;= \frac{1}{4} + \frac{1}{4} + \frac{1}{4} + \frac{1}{4} \\
+O &amp;= ♩ + ♩ + ♩ + ♩
+\end{aligned}
+\tag{1}\]</span></span></p>
 </section>
+</section>
+<section id="metodologia" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> METODOLOGIA</h1>
+<p>A atividade proposta consiste na exploração de conceitos de frações e equivalência a partir das figuras rítmicas e fórmulas de compasso da música <a href="https://open.spotify.com/intl-pt/track/2sUhjzuc6w4SRFwoC3LvXZ?si=594a3325c9c24baa">Acorda Pedrinho de Jovem Dionisio</a>. Essa música foi escolhida por dois critérios. Primeiramente, como listado por <span class="citation" data-cites="souto_interdisciplinaridade_2010">SOUTO (<a href="#ref-souto_interdisciplinaridade_2010" role="doc-biblioref">2010</a>)</span>, o tema deve ser algo conhecido dos alunos, e essa música alcançou grande popularidade entre as crianças brasileiras em plataformas de streaming entre 2022 e 2023. Em segundo lugar, a música possui uma melodia simples e muito marcada, quase rítmica, o que facilita a identificação das figuras rítmicas.</p>
+<p>A atividade é composta por</p>
+</section>
+<section id="conclusão" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> CONCLUSÃO</h1>
 </section>
 <section id="referências" class="level1 unnumbered">
 <h1 class="unnumbered">REFERÊNCIAS</h1>
@@ -217,6 +328,12 @@ ROBINSON, A. H. <a href="https://doi.org/10.1080/10632913.2013.826050">Arts Inte
 SOUTO, D. L. P. Interdisciplinaridade e aprendizagem da Matemática em sala de aula, de Vanessa Sena Tomaz e Maria Manuela Martins Soares David.(Coleção Tendências em Educação Matemática)–Belo Horizonte: Autêntica, 2008. <strong>Bolema-Boletim de Educação Matemática</strong>, v. 23, n. 36, p. 801–808, 2010.
 </div>
 </div>
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figura&nbsp;1&nbsp;(a): Notas musicais e seus valores rítmicos</span>
+<span class="glightbox-desc lightbox-desc-2">Figura&nbsp;1&nbsp;(b): Relação hierárquica entre as notas musicais</span>
+<span class="glightbox-desc lightbox-desc-3">Figura&nbsp;2: Exemplos de frações de compasso</span>
+<span class="glightbox-desc lightbox-desc-4">Figura&nbsp;3: Exemplos de compassos <span class="math inline">\(3/4\)</span></span>
+</div>
 </section>
 
 
@@ -224,6 +341,7 @@ SOUTO, D. L. P. Interdisciplinaridade e aprendizagem da Matemática em sala de a
 
 <ol>
 <li id="fn1"><p>K-8 é uma abreviação para <em>kindergarten</em> (pré-escola) até o 8º ano do ensino fundamental.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Na filosofia, a estética é uma área de conhecimento associada às artes e sensações. É a forma de conhecer o mundo através dos cinco sentidos.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main>
 <!-- /main column -->
@@ -637,6 +755,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","loop":false});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 
