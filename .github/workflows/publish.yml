@@ -17,10 +17,10 @@ jobs:
       - name: Install TexLive
         run: |
           sudo apt install texlive
-          sudo tlmgr init-usertree
-          sudo tlmgr option repository https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2021/tlnet-final
-          sudo tlmgr install musixtex-fonts
-          sudo tlmgr install musicography
+          tlmgr init-usertree
+          tlmgr option repository https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2021/tlnet-final
+          tlmgr install musixtex-fonts
+          tlmgr install musicography
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
