@@ -113,9 +113,20 @@ $$ {#eq-fracao}
 
 A atividade proposta consiste na exploração de conceitos de frações e equivalência a partir das figuras rítmicas e fórmulas de compasso da música [Acorda Pedrinho de Jovem Dionisio](https://open.spotify.com/intl-pt/track/2sUhjzuc6w4SRFwoC3LvXZ?si=594a3325c9c24baa). Essa música foi escolhida por dois critérios. Primeiramente, como listado por @souto_interdisciplinaridade_2010, o tema deve ser algo conhecido dos alunos, e essa música alcançou grande popularidade entre as crianças brasileiras em plataformas de streaming entre 2022 e 2023. Em segundo lugar, a música possui uma melodia simples e muito marcada, quase rítmica, o que facilita a identificação das figuras rítmicas.
 
-A atividade é composta por 
+A atividade é composta por X etapas:
 
-# CONCLUSÃO
+1. **Apresentação dos valores rítmicos**: O professor apresenta as figuras rítmicas, sua relação direta com frações e suas relações hierárquicas de duração, conforme descrito na seção anterior.
+    - Recurso: mídia ou instrumento musical.
+1. **Ditado rítmico**: O professor tocar as  figura rítmicas, e os alunos devem responder (num ditado, coletivamente) qual o valor foi tocado.
+    - Recurso: mídia ou instrumento musical.
+1. **Classificação de grandeza das frações**: Aqui, o aluno já deve ser capaz de responder a perguntas como $1/4>1/2$? $1/1<1/8$? $2/4=1/2$?
+    - Recurso: pincel e quadro.
+1. **Apresentação da música**: O professor reproduz a música para os alunos, que devem ouvir atentamente e tentar identificar os valores rítmicos presentes.
+    - Recurso: mídia ou instrumento musical.
+
+Na última etapa, após a reprodução da música, o professor, junto com os alunos, devem realizar a divisão da letra da música em notas e compassos — que, por conta da música escolhida, é quase uma divisão silábica. A partir daí, os alunos devem apontar quais as figuras rítmicas representam cada trecho da letra e preencher no caderno.
+
+# DISCUSSÃO
 
 # REFERÊNCIAS {-}
 

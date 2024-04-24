@@ -15,11 +15,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install TexLive
-        run: |
-          sudo apt install texlive
-          sudo tlmgr init-usertree
-          sudo tlmgr update --self
-          sudo tlmgr install musicography
+        run: sudo apt install texlive-full
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
