@@ -11,7 +11,9 @@ format:
   docx: default
   pdf:
     documentclass: scrreprt
-
+    include-in-header:  
+      - text: |
+          \usepackage{musicography}
 editor:
   render-on-save: true
 execute:

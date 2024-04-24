@@ -54,6 +54,9 @@ div.csl-indent {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script async="" src="https://hypothes.is/embed.js"></script>
 <script>
   window.document.addEventListener("DOMContentLoaded", function (_event) {
@@ -61,6 +64,35 @@ div.csl-indent {
   });
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta name="citation_title" content="Enriquecendo o ensino de frações através da integração da matemática e música">
 <meta name="citation_author" content="Alberson Miranda">
@@ -69,13 +101,15 @@ div.csl-indent {
 <meta name="citation_year" content="NaN">
 <meta name="citation_online_date" content="NaN-NaN-NaN">
 <meta name="citation_language" content="pt-BR">
-<meta name="citation_reference" content="citation_title=Enriching the teaching of fractions through integrating mathematics and music;,citation_abstract=Background: Mathematics education is a significant issue in the South African context. Learners’ achievement levels are markedly low as suggested by both national and international studies. The teaching and learning of fractions in particular have been identified as challenging.Aim: The aim of this article is to share some of the outcomes derived from a series of lessons in which aspects of music (note values) were integrated into the teaching of fractions in primary school.Setting: The study was conducted in a Grade 5 class in an independent school in the Eastern Cape, with readily available resources at hand.Methods: The broader study was an action research case study. It employed qualitative methods of data collection, based on cycles of critical reflection and adjustment, including feedback from learners and critical peers.Results: Findings highlighted the value of integrating music and mathematics as a teaching and learning strategy. Learning support materials and activities that promoted curriculum integration were designed. The discussion highlights benefits of these integrated lessons.Conclusion: We conclude by suggesting that teachers explore synergistic opportunities across mathematics and music as subjects. In particular, we suggest curriculum integration to support the teaching of fractions in the primary grades of schooling. Our hope is that this article will encourage teachers to develop their own integrated strategies for enriching their teaching of mathematics.;,citation_author=Tarryn Lovemore;,citation_author=Sally-Ann Robertson;,citation_author=Mellony Graven;,citation_publication_date=2021-01;,citation_cover_date=2021-01;,citation_year=2021;,citation_doi=10.4102/sajce.v11i1.899;,citation_volume=11;,citation_journal_title=South African Journal of Childhood Education;">
+<meta name="citation_reference" content="citation_title=Arts Integration and the Success of Disadvantaged Students: A Research Evaluation;,citation_abstract=Does arts integration contribute to student success for disadvantaged student populations? The introduction to this article compares students’ academic performance and arts education in countries outperforming the United States on the recent Trends in International Mathematics and Science Study (TIMSS) and Progress in International Reading Literacy Study (PIRLS) and makes the argument for using arts integration as a way to teach the Common Core standards and align instruction to the Universal Design for Learning principles. This evaluation of research helps to support the evidence base by examining the quality of studies published between 1995 and 2011 investigating the use of arts integration with disadvantaged student populations, including economically disadvantaged students, English language learners, and students with disabilities. Four hundred fifty-three studies were explored, resulting in the inclusion of forty-four studies in this analysis. Studies were categorized as the following: single art integration, multi-arts integration, effects of arts integration on students with disabilities, or effects of arts integration on school climate. Studies were evaluated for their research design, implementation, and effects, and results depicted positive effects and potentially positive effects. Policy implications and suggestions for future research using the author’s proposed theoretical framework are also discussed.;,citation_author=A. Helene Robinson;,citation_publication_date=2013-10-01;,citation_cover_date=2013-10-01;,citation_year=2013;,citation_fulltext_html_url=https://doi.org/10.1080/10632913.2013.826050;,citation_issue=4;,citation_doi=10.1080/10632913.2013.826050;,citation_issn=1063-2913;,citation_volume=114;,citation_journal_title=Arts Education Policy Review;">
+<meta name="citation_reference" content="citation_title=The Subservient, Co-Equal, Affective, and Social Integration Styles and their Implications for the Arts;,citation_author=Liora Bresler;,citation_publication_date=1995-06-01;,citation_cover_date=1995-06-01;,citation_year=1995;,citation_fulltext_html_url=https://doi.org/10.1080/10632913.1995.9934564;,citation_issue=5;,citation_doi=10.1080/10632913.1995.9934564;,citation_issn=1063-2913;,citation_volume=96;,citation_journal_title=Arts Education Policy Review;">
+<meta name="citation_reference" content="citation_title=Tendências Em Educação Matemática;,citation_author=Ana Cláudia Collaço De Mello;,citation_publication_date=2007-11-23;,citation_cover_date=2007-11-23;,citation_year=2007;,citation_isbn=978-85-7817-064-6;,citation_language=pt-BR;">
+<meta name="citation_reference" content="citation_title=Objetivos e tendencias da Educação Matemática em paises em via de desenvolvimento;,citation_author=Ubiratan D’Ambrosio;,citation_publication_date=2021-11-22;,citation_cover_date=2021-11-22;,citation_year=2021;,citation_fulltext_html_url=https://revistas.ucr.ac.cr/index.php/cifem/article/view/49191;,citation_issn=2215-5627;,citation_language=pt-PT;,citation_journal_title=Cuadernos de Investigación y Formación en Educación Matemática;">
+<meta name="citation_reference" content="citation_title=EDUCAÇÃO MATEMÁTICA E MÚSICA: UMA REDE DE POSSIBILIDADES;,citation_abstract=This article aims to discuss connections between Mathematics and Music from scientific productions, as a network of possibilities for Elementary and High School. It relied on Machado’s (2011) Network of Meanings and characterized as state-of-the-art research, it comprised three methodological stages: Stage 1 consisted of a literature survey on the relationship between Mathematics and Music. In Stage 2, the exploration of this material was conducted, and typical characteristics and approaches and perspectives of these productions were defined. Stage 3 consisted of the analysis of these data, and systematization through a network of meanings of the relationships between Mathematics and Music. It is expected to contribute to present potentialities and limitations and central characteristics of research that deal with this theme, for the identification of theoretical and practical contributions to the fields of research and teaching.;,citation_author=Bianca Alves-Pereira;,citation_author=Sabrina Alves-Pereira;,citation_author=Patricia Rosana Linardi;,citation_publication_date=2022-09-05;,citation_cover_date=2022-09-05;,citation_year=2022;,citation_fulltext_html_url=https://periodicos.ufjf.br/index.php/edufoco/article/view/36886;,citation_issue=1;,citation_issn=2447-5246;,citation_volume=27;,citation_language=pt-PT;,citation_journal_title=Educação em Foco;">
 <meta name="citation_reference" content="citation_title=Interdisciplinaridade e aprendizagem da Matemática em sala de aula, de Vanessa Sena Tomaz e Maria Manuela Martins Soares David.(Coleção Tendências em Educação Matemática)–Belo Horizonte: Autêntica, 2008.;,citation_author=Daise Lago Pereira Souto;,citation_publication_date=2010;,citation_cover_date=2010;,citation_year=2010;,citation_issue=36;,citation_volume=23;,citation_journal_title=Bolema-Boletim de Educação Matemática;">
-<meta name="citation_reference" content="citation_title=EDUCAÇÃO MATEMÁTICA E MÚSICA: UMA REDE DE POSSIBILIDADES;,citation_abstract=This article aims to discuss connections between Mathematics and Music from scientific productions, as a network of possibilities for Elementary and High School. It relied on Machado’s (2011) Network of Meanings and characterized as state-of-the-art research, it comprised three methodological stages: Stage 1 consisted of a literature survey on the relationship between Mathematics and Music. In Stage 2, the exploration of this material was conducted, and typical characteristics and approaches and perspectives of these productions were defined. Stage 3 consisted of the analysis of these data, and systematization through a network of meanings of the relationships between Mathematics and Music. It is expected to contribute to present potentialities and limitations and central characteristics of research that deal with this theme, for the identification of theoretical and practical contributions to the fields of research and teaching.;,citation_author=Bianca Alves-Pereira;,citation_author=Sabrina Alves-Pereira;,citation_author=Patricia Rosana Linardi;,citation_publication_date=2022-09;,citation_cover_date=2022-09;,citation_year=2022;,citation_fulltext_html_url=https://periodicos.ufjf.br/index.php/edufoco/article/view/36886;,citation_issue=1;,citation_issn=2447-5246;,citation_volume=27;,citation_journal_title=Educação em Foco;">
-<meta name="citation_reference" content="citation_title=Objetivos e tendencias da Educação Matemática em paises em via de desenvolvimento;,citation_author=Ubiratan D’Ambrosio;,citation_publication_date=2021-11;,citation_cover_date=2021-11;,citation_year=2021;,citation_fulltext_html_url=https://revistas.ucr.ac.cr/index.php/cifem/article/view/49191;,citation_issue=Especial;,citation_issn=2215-5627;,citation_journal_title=Cuadernos de Investigación y Formación en Educación Matemática;">
-<meta name="citation_reference" content="citation_title=Tendências Em Educação Matemática;,citation_author=Ana Cláudia Collaço De Mello;,citation_publication_date=2007-11;,citation_cover_date=2007-11;,citation_year=2007;,citation_isbn=978-85-7817-064-6;">
-<meta name="citation_reference" content="citation_title=The Subservient, Co-Equal, Affective, and Social Integration Styles and their Implications for the Arts;,citation_author=Liora Bresler;,citation_publication_date=1995-06;,citation_cover_date=1995-06;,citation_year=1995;,citation_fulltext_html_url=https://doi.org/10.1080/10632913.1995.9934564;,citation_issue=5;,citation_doi=10.1080/10632913.1995.9934564;,citation_issn=1063-2913;,citation_volume=96;,citation_journal_title=Arts Education Policy Review;">
-<meta name="citation_reference" content="citation_title=Arts Integration and the Success of Disadvantaged Students: A Research Evaluation;,citation_abstract=Does arts integration contribute to student success for disadvantaged student populations? The introduction to this article compares students’ academic performance and arts education in countries outperforming the United States on the recent Trends in International Mathematics and Science Study (TIMSS) and Progress in International Reading Literacy Study (PIRLS) and makes the argument for using arts integration as a way to teach the Common Core standards and align instruction to the Universal Design for Learning principles. This evaluation of research helps to support the evidence base by examining the quality of studies published between 1995 and 2011 investigating the use of arts integration with disadvantaged student populations, including economically disadvantaged students, English language learners, and students with disabilities. Four hundred fifty-three studies were explored, resulting in the inclusion of forty-four studies in this analysis. Studies were categorized as the following: single art integration, multi-arts integration, effects of arts integration on students with disabilities, or effects of arts integration on school climate. Studies were evaluated for their research design, implementation, and effects, and results depicted positive effects and potentially positive effects. Policy implications and suggestions for future research using the author’s proposed theoretical framework are also discussed.;,citation_author=A. Helene Robinson;,citation_publication_date=2013-10;,citation_cover_date=2013-10;,citation_year=2013;,citation_fulltext_html_url=https://doi.org/10.1080/10632913.2013.826050;,citation_issue=4;,citation_doi=10.1080/10632913.2013.826050;,citation_issn=1063-2913;,citation_volume=114;,citation_journal_title=Arts Education Policy Review;">
+<meta name="citation_reference" content="citation_title=Enriching the teaching of fractions through integrating mathematics and music;,citation_abstract=Background: Mathematics education is a significant issue in the South African context. Learners’ achievement levels are markedly low as suggested by both national and international studies. The teaching and learning of fractions in particular have been identified as challenging.Aim: The aim of this article is to share some of the outcomes derived from a series of lessons in which aspects of music (note values) were integrated into the teaching of fractions in primary school.Setting: The study was conducted in a Grade 5 class in an independent school in the Eastern Cape, with readily available resources at hand.Methods: The broader study was an action research case study. It employed qualitative methods of data collection, based on cycles of critical reflection and adjustment, including feedback from learners and critical peers.Results: Findings highlighted the value of integrating music and mathematics as a teaching and learning strategy. Learning support materials and activities that promoted curriculum integration were designed. The discussion highlights benefits of these integrated lessons.Conclusion: We conclude by suggesting that teachers explore synergistic opportunities across mathematics and music as subjects. In particular, we suggest curriculum integration to support the teaching of fractions in the primary grades of schooling. Our hope is that this article will encourage teachers to develop their own integrated strategies for enriching their teaching of mathematics.;,citation_author=Tarryn Lovemore;,citation_author=Sally-Ann Robertson;,citation_author=Mellony Graven;,citation_publication_date=2021-01-21;,citation_cover_date=2021-01-21;,citation_year=2021;,citation_doi=10.4102/sajce.v11i1.899;,citation_volume=11;,citation_journal_title=South African Journal of Childhood Education;,citation_journal_abbrev=South African Journal of Childhood Education;">
+<meta name="citation_reference" content="citation_title=EDUCAÇÃO INTEGRAL: LIMITES E POSSIBILIDADES SOB A HEGEMONIA DO CAPITAL;,citation_abstract=O presente trabalho busca refletir sobre a possibilidade do trabalho (MARX, ENGELS, 2004) ser categoria central no processo formativo, no segundo segmento do ensino fundamental, tendo em vista proporcionar a formação plena dos sujeitos. O estudo se insere no debate envolvendo a temática da educação integral em tempo integral que, atualmente tem ocupado espaço marcante nas discussões inerentes ao campo da educação (COELHO, 2009; MOLL, 2012). Neste sentido, tem se constituído um campo de disputa política e ideológica, onde perspectivas divergentes sinalizam para possíveis caminhos para materialização de propostas de tempo integral que, de fato proporcione uma educação integral.;,citation_author=Cosme Leonardo Almeida Maciel;,citation_publication_date=2015-12-17;,citation_cover_date=2015-12-17;,citation_year=2015;,citation_fulltext_html_url=https://revistas.ufrj.br/index.php/rce/article/view/2220;,citation_issue=20;,citation_doi=10.20500/rce.v10i20.2220;,citation_issn=1809-5747;,citation_volume=10;,citation_language=pt-PT;,citation_journal_title=Revista Contemporânea de Educação;">
+<meta name="citation_reference" content="citation_title=Trabalho como Princípio Educativo;,citation_author=Gaudêncio Frigotto;,citation_author=Maria Ciavatta;,citation_publication_date=2012-01-30;,citation_cover_date=2012-01-30;,citation_year=2012;,citation_isbn=978-85-98768-64-9;,citation_language=pt-BR;,citation_inbook_title=Dicionário da Educação do Campo;">
 </head>
 
 <body>
@@ -109,7 +143,7 @@ div.csl-indent {
                 <div>
             <div class="quarto-title-meta-heading">Data de Publicação</div>
             <div class="quarto-title-meta-contents">
-              <p class="date">21 de abril de 2024</p>
+              <p class="date">24 de abril de 2024</p>
             </div>
           </div>
           
@@ -131,7 +165,13 @@ div.csl-indent {
    
   <ul>
   <li><a href="#introdução" id="toc-introdução" class="nav-link active" data-scroll-target="#introdução"><span class="header-section-number">1</span> INTRODUÇÃO</a></li>
-  <li><a href="#fundamentação-teórica" id="toc-fundamentação-teórica" class="nav-link" data-scroll-target="#fundamentação-teórica"><span class="header-section-number">2</span> FUNDAMENTAÇÃO TEÓRICA</a></li>
+  <li><a href="#fundamentação-teórica" id="toc-fundamentação-teórica" class="nav-link" data-scroll-target="#fundamentação-teórica"><span class="header-section-number">2</span> FUNDAMENTAÇÃO TEÓRICA</a>
+  <ul class="collapse">
+  <li><a href="#interdisciplinaridade-e-integração-com-artes" id="toc-interdisciplinaridade-e-integração-com-artes" class="nav-link" data-scroll-target="#interdisciplinaridade-e-integração-com-artes"><span class="header-section-number">2.1</span> Interdisciplinaridade e integração com artes</a></li>
+  <li><a href="#frações-de-compasso-e-valores-de-notas-musicais" id="toc-frações-de-compasso-e-valores-de-notas-musicais" class="nav-link" data-scroll-target="#frações-de-compasso-e-valores-de-notas-musicais"><span class="header-section-number">2.2</span> Frações de compasso e valores de notas musicais</a></li>
+  </ul></li>
+  <li><a href="#metodologia" id="toc-metodologia" class="nav-link" data-scroll-target="#metodologia"><span class="header-section-number">3</span> METODOLOGIA</a></li>
+  <li><a href="#conclusão" id="toc-conclusão" class="nav-link" data-scroll-target="#conclusão"><span class="header-section-number">4</span> CONCLUSÃO</a></li>
   <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">REFERÊNCIAS</a></li>
   </ul>
 </nav>
@@ -147,10 +187,13 @@ div.csl-indent {
 
 <section id="introdução" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> INTRODUÇÃO</h1>
-<p>A música é um instrumento poderoso para promoção dessa interdisciplinaridade, não apenas porque ela está enraizada no imaginário de cada criança, que desde o berço escuta o canto da mãe ao ninar, mas também por ser uma forma de arte que envolve a matemática em sua estrutura.</p>
+<p>Música pode ser um instrumento poderoso nas mãos do professor para promoção de interdisciplinaridade, não apenas porque ela está enraizada no imaginário de cada criança, que desde o berço escuta o canto da mãe ao ninar, mas também por ser uma forma de arte que envolve a matemática em sua estrutura.</p>
+<p>Neste trabalho, exploro os conceitos de interdisciplinaridade e integração com artes para enriquecer o ensino de frações. Além disso, apresento uma proposta de atividade que integra a matemática e a música, com o objetivo de promover a aprendizagem de frações de forma mais significativa e contextualizada.</p>
 </section>
 <section id="fundamentação-teórica" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> FUNDAMENTAÇÃO TEÓRICA</h1>
+<section id="interdisciplinaridade-e-integração-com-artes" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="interdisciplinaridade-e-integração-com-artes"><span class="header-section-number">2.1</span> Interdisciplinaridade e integração com artes</h2>
 <p>As chamadas tendências em educação matemática são categorizações que buscam identificar e descrever as diferentes abordagens e perspectivas que norteiam a pesquisa e o ensino da matemática <span class="citation" data-cites="mello_tendencias_2007">(<a href="#ref-mello_tendencias_2007" role="doc-biblioref">MELLO, 2007</a>)</span>. Nesse sentido, uma das tendências que surge a partir da busca de soluções para os problemas da Educação Matemática é a interdisciplinaridade.</p>
 <p>A interdisciplinaridade é uma abordagem que visa a integração de diferentes áreas do conhecimento, com o objetivo de promover uma aprendizagem mais significativa e contextualizada. Esse conceito envolve ao mesmo tempo teoria e ação, uma vez que exige mais a atuação do professor em sala de aula do que a simples união de duas ou mais disciplinas ou áreas do saber em atividades <span class="citation" data-cites="mello_tendencias_2007">(<a href="#ref-mello_tendencias_2007" role="doc-biblioref">MELLO, 2007</a>)</span>.</p>
 <p>Essa interdisciplinaridade é alcançada a partir do rompimento com o isolamento e a fragmentação dos conteúdos, possibilitando a transferência de aprendizagem de uma situação para a outra e a construção de significado em cima desse aprendizado transferido <span class="citation" data-cites="souto_interdisciplinaridade_2010">(<a href="#ref-souto_interdisciplinaridade_2010" role="doc-biblioref">SOUTO, 2010</a>)</span>. Para que isso seja possível, <span class="citation" data-cites="souto_interdisciplinaridade_2010">SOUTO (<a href="#ref-souto_interdisciplinaridade_2010" role="doc-biblioref">2010</a>)</span> lista algumas condições que a atividade deve atender, como:</p>
@@ -173,28 +216,123 @@ div.csl-indent {
 <li><strong>Integração subserviente</strong>: a arte é apenas um extra, usada para ilustrar ou reforçar conceitos de outras disciplinas;</li>
 <li><strong>Integração afetiva</strong>: a integração se dá por meio da imersão e da consequente reação dos alunos à arte, como música e peças artísticas, complementando o currículo de outras disciplinas;</li>
 <li><strong>Integração social</strong>: baseada em atividades, utilizando a arte para promover a interação entre os alunos e aumentar a participação parental, como em peças de teatro ou música em grupo;</li>
-<li><strong>Integração co-igual cognitiva</strong>: a arte é integrada com outros aspectos do currículo e os alunos são exigidos a usar habilidades de pensamento de ordem superior e qualidades estéticas para obter um entendimento mais aprofundado de um conceito acadêmico específico;</li>
+<li><strong>Integração co-igual cognitiva</strong>: a arte é integrada com outros aspectos do currículo e os alunos são exigidos a usar habilidades de pensamento de ordem superior e qualidades estéticas<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> para obter um entendimento mais aprofundado de um conceito acadêmico específico;</li>
 </ol>
 <p>As três primeiras abordagens utilizam a arte como uma ferramenta. Já a quarta abordagem, a integração co-igual cognitiva, é a mais exigente, demandando do professor não apenas o conhecimento, habilidade e confiança no seu conteúdo, mas também na forma de arte escolhida. Além disso, requer tempo para planejar e efetivamente preparar aulas que integrem a arte com o conteúdo acadêmico <span class="citation" data-cites="lovemore_enriching_2021">(<a href="#ref-lovemore_enriching_2021" role="doc-biblioref">LOVEMORE; ROBERTSON; GRAVEN, 2021</a>)</span>.</p>
+<p>A essa altura, é importante destacar que a integração com a arte se localiza na esfera pedagógica (micro), estando associada mas não se confundindo com a educação omnilateral, que é um conceito melhor entendido na esfera macro. O objetivo da educação omnilateral é a formação integral do ser humano, que envolve o desenvolvimento de todas as suas potencialidades, incluindo a intelectual, a física, a artística, a moral e a ética. Esse objetivo é alcançado através do desenvolvimento de “processos pedagógicos que garantam, ao final do processo educativo, o acesso efetivamente democrático ao conhecimento na sua mais elevada universalidade”, que se dão em oposição ao tipo de educação presente no seio das sociedades capitalistas <span class="citation" data-cites="maciel_educacao_2015 frigotto_trabalho_2012">(<a href="#ref-maciel_educacao_2015" role="doc-biblioref">MACIEL, 2015</a>; apud <a href="#ref-frigotto_trabalho_2012" role="doc-biblioref">FRIGOTTO; CIAVATTA, 2012</a>)</span>.</p>
+<p>Não obstante não se tratar de atividades ao nível de uma educação omnilateral, a integração com a arte traz consigo potencial para facilitar o conhecimento mais profundo dos conceitos, realizar conexões entre diferentes áreas do conhecimento de forma mais significativa e destacar os relacionamentos entre as disciplinas e os temas culturais da sociedade. Além disso, há também evidências de benefícios comportamentais e de relacionamento, como redução de ansiedade e aumento da participação e colaboração, não apenas entre alunos, mas também entre professores.<span class="citation" data-cites="lovemore_enriching_2021">(<a href="#ref-lovemore_enriching_2021" role="doc-biblioref">LOVEMORE; ROBERTSON; GRAVEN, 2021</a>)</span>.</p>
+</section>
+<section id="frações-de-compasso-e-valores-de-notas-musicais" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="frações-de-compasso-e-valores-de-notas-musicais"><span class="header-section-number">2.2</span> Frações de compasso e valores de notas musicais</h2>
+<p>Qualquer aluno que tenha escolhido música esperando não encontrar matemática ficará profundamente desapontado. Na maior parte dos livros e apostilas de teoria musical geral, logo no capítulo 1, o aluno será introduzido aos conceitos de figuras rítmicas e fórmulas de compasso.</p>
+<p>Toda e qualquer nota musical possui um valor rítmico associado, que é a duração que ela deve ser tocada (<a href="#fig-valores" class="quarto-xref">Figura&nbsp;1 (a)</a>). Cada nota musical vale a metade da nota que a sucede, e o dobro da nota que a antecede. Essa relação hierárquica baseada em subdivisões e multiplicações por 2 é a base do sistema de notação musical (<a href="#fig-hierarquia" class="quarto-xref">Figura&nbsp;1 (b)</a>).</p>
+<div id="fig-notas" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-notas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-notas" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div id="fig-valores" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-valores-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="img/valores.png" class="lightbox" data-gallery="fig-notas" data-glightbox="description: .lightbox-desc-1"><img src="img/valores.png" class="img-fluid figure-img" data-ref-parent="fig-notas" width="300"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-valores-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Notas musicais e seus valores rítmicos
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-notas" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div id="fig-hierarquia" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-hierarquia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="img/hierarquia.png" class="lightbox" data-gallery="fig-notas" data-glightbox="description: .lightbox-desc-2"><img src="img/hierarquia.png" class="img-fluid figure-img" data-ref-parent="fig-notas" width="400"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-hierarquia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Relação hierárquica entre as notas musicais
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-notas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Notas musicais e suas relações hierárquicas de duração.
+</figcaption>
+</figure>
+</div>
+<p>A fração de compasso (<a href="#fig-fração" class="quarto-xref">Figura&nbsp;2</a>) é a responsável por indicar a quantidade de tempos que cada compasso possui, e a unidade de tempo que será utilizada para contar esses tempos. O numerador da fração indica a quantidade de tempos que cabem e cada compasso, enquanto o denominador indica a unidade de tempo que será utilizada para contar esses tempos. Por exemplo, uma fração de compasso <span class="math inline">\(4/4\)</span> indica que cada compasso possui <span class="math inline">\(4\)</span> tempos, e que a unidade de tempo é a semínima (<span class="math inline">\(1/4\)</span>).</p>
+<div id="fig-fração" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fração-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="img/fração.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3"><img src="img/fração.png" class="img-fluid figure-img" width="300"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fração-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2: Exemplos de frações de compasso
+</figcaption>
+</figure>
+</div>
+<p>Então, se um compasso tiver fração <span class="math inline">\(3/4\)</span>, isso significa que ele terá 3 tempos, e que a unidade de tempo é a semínima. Esse compasso pode conter, por exemplo, três semínimas ou uma mínima e uma semínima (<a href="#fig-fração-2" class="quarto-xref">Figura&nbsp;3</a>).</p>
+<div id="fig-fração-2" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fração-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="img/fração_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4"><img src="img/fração_2.png" class="img-fluid figure-img" width="300"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fração-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3: Exemplos de compassos <span class="math inline">\(3/4\)</span>
+</figcaption>
+</figure>
+</div>
+<p>Fica evidente que a teoria musical conta com conceitos e notação matemática, de forma que a escolha da música como vetor para a integração com a arte se mostra vantajosa para o ensino de frações, sem qualquer necessidade de extrapolação de contexto — a matemática já está lá.</p>
+<p>A equivalência se dá diretamente:</p>
+<p><span id="eq-fracao"><span class="math display">\[
+\begin{aligned}
+  \text{1 inteiro} &amp;= \frac{1}{4} + \frac{1}{4} + \frac{1}{4} + \frac{1}{4} \\
+O &amp;= ♩ + ♩ + ♩ + ♩
+\end{aligned}
+\tag{1}\]</span></span></p>
+</section>
+</section>
+<section id="metodologia" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> METODOLOGIA</h1>
+<p>A atividade proposta consiste na exploração de conceitos de frações e equivalência a partir das figuras rítmicas e fórmulas de compasso da música <a href="https://open.spotify.com/intl-pt/track/2sUhjzuc6w4SRFwoC3LvXZ?si=594a3325c9c24baa">Acorda Pedrinho de Jovem Dionisio</a>. Essa música foi escolhida por dois critérios. Primeiramente, como listado por <span class="citation" data-cites="souto_interdisciplinaridade_2010">SOUTO (<a href="#ref-souto_interdisciplinaridade_2010" role="doc-biblioref">2010</a>)</span>, o tema deve ser algo conhecido dos alunos, e essa música alcançou grande popularidade entre as crianças brasileiras em plataformas de streaming entre 2022 e 2023. Em segundo lugar, a música possui uma melodia simples e muito marcada, quase rítmica, o que facilita a identificação das figuras rítmicas.</p>
+<p>A atividade é composta por</p>
+</section>
+<section id="conclusão" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> CONCLUSÃO</h1>
 </section>
 <section id="referências" class="level1 unnumbered">
 <h1 class="unnumbered">REFERÊNCIAS</h1>
 <div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list">
 <div id="ref-bresler_subservient_1995" class="csl-entry" role="listitem">
-BRESLER, L. <a href="https://doi.org/10.1080/10632913.1995.9934564">The <span>Subservient</span>, <span>Co</span>-<span>Equal</span>, <span>Affective</span>, and <span>Social</span> <span>Integration</span> <span>Styles</span> and their <span>Implications</span> for the <span>Arts</span></a>. <strong>Arts Education Policy Review</strong>, v. 96, n. 5, p. 31–37, jun. 1995.
+BRESLER, L. <a href="https://doi.org/10.1080/10632913.1995.9934564">The Subservient, Co-Equal, Affective, and Social Integration Styles and their Implications for the Arts</a>. <strong>Arts Education Policy Review</strong>, v. 96, n. 5, p. 31–37, 1 jun. 1995.
+</div>
+<div id="ref-frigotto_trabalho_2012" class="csl-entry" role="listitem">
+FRIGOTTO, G.; CIAVATTA, M. Trabalho como Princípio Educativo. Em: <strong>Dicionário da Educação do Campo</strong>. [s.l.] Epsjv - Fiocruz, 2012. p. 750–757.
 </div>
 <div id="ref-lovemore_enriching_2021" class="csl-entry" role="listitem">
-LOVEMORE, T.; ROBERTSON, S.-A.; GRAVEN, M. <a href="https://doi.org/10.4102/sajce.v11i1.899">Enriching the teaching of fractions through integrating mathematics and music</a>. <strong>South African Journal of Childhood Education</strong>, v. 11, jan. 2021.
+LOVEMORE, T.; ROBERTSON, S.-A.; GRAVEN, M. <a href="https://doi.org/10.4102/sajce.v11i1.899">Enriching the teaching of fractions through integrating mathematics and music</a>. <strong>South African Journal of Childhood Education</strong>, v. 11, 21 jan. 2021.
+</div>
+<div id="ref-maciel_educacao_2015" class="csl-entry" role="listitem">
+MACIEL, C. L. A. <a href="https://doi.org/10.20500/rce.v10i20.2220"><span>EDUCAÇÃO</span> <span>INTEGRAL</span>: <span>LIMITES</span> E <span>POSSIBILIDADES</span> <span>SOB</span> A <span>HEGEMONIA</span> <span>DO</span> <span>CAPITAL</span></a>. <strong>Revista Contemporânea de Educação</strong>, v. 10, n. 20, p. 405 a 426–405 a 426, 17 dez. 2015.
 </div>
 <div id="ref-mello_tendencias_2007" class="csl-entry" role="listitem">
-MELLO, A. C. C. D. <strong>Tendências <span>Em</span> <span>Educação</span> <span>Matemática</span></strong>. [s.l.] Unisulvirtual, 2007.
+MELLO, A. C. C. D. <strong>Tendências Em Educação Matemática</strong>. [s.l.] Unisulvirtual, 2007.
 </div>
 <div id="ref-robinson_arts_2013" class="csl-entry" role="listitem">
-ROBINSON, A. H. <a href="https://doi.org/10.1080/10632913.2013.826050">Arts <span>Integration</span> and the <span>Success</span> of <span>Disadvantaged</span> <span>Students</span>: <span>A</span> <span>Research</span> <span>Evaluation</span></a>. <strong>Arts Education Policy Review</strong>, v. 114, n. 4, p. 191–204, out. 2013.
+ROBINSON, A. H. <a href="https://doi.org/10.1080/10632913.2013.826050">Arts Integration and the Success of Disadvantaged Students: A Research Evaluation</a>. <strong>Arts Education Policy Review</strong>, v. 114, n. 4, p. 191–204, 1 out. 2013.
 </div>
 <div id="ref-souto_interdisciplinaridade_2010" class="csl-entry" role="listitem">
-SOUTO, D. L. P. Interdisciplinaridade e aprendizagem da <span>Matemática</span> em sala de aula, de <span>Vanessa</span> <span>Sena</span> <span>Tomaz</span> e <span>Maria</span> <span>Manuela</span> <span>Martins</span> <span>Soares</span> <span>David</span>.(<span>Coleção</span> <span>Tendências</span> em <span>Educação</span> <span>Matemática</span>)–<span>Belo</span> <span>Horizonte</span>: <span>Autêntica</span>, 2008. <strong>Bolema-Boletim de Educação Matemática</strong>, v. 23, n. 36, p. 801–808, 2010.
+SOUTO, D. L. P. Interdisciplinaridade e aprendizagem da Matemática em sala de aula, de Vanessa Sena Tomaz e Maria Manuela Martins Soares David.(Coleção Tendências em Educação Matemática)–Belo Horizonte: Autêntica, 2008. <strong>Bolema-Boletim de Educação Matemática</strong>, v. 23, n. 36, p. 801–808, 2010.
 </div>
+</div>
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figura&nbsp;1&nbsp;(a): Notas musicais e seus valores rítmicos</span>
+<span class="glightbox-desc lightbox-desc-2">Figura&nbsp;1&nbsp;(b): Relação hierárquica entre as notas musicais</span>
+<span class="glightbox-desc lightbox-desc-3">Figura&nbsp;2: Exemplos de frações de compasso</span>
+<span class="glightbox-desc lightbox-desc-4">Figura&nbsp;3: Exemplos de compassos <span class="math inline">\(3/4\)</span></span>
 </div>
 </section>
 
@@ -203,6 +341,7 @@ SOUTO, D. L. P. Interdisciplinaridade e aprendizagem da <span>Matemática</span>
 
 <ol>
 <li id="fn1"><p>K-8 é uma abreviação para <em>kindergarten</em> (pré-escola) até o 8º ano do ensino fundamental.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Na filosofia, a estética é uma área de conhecimento associada às artes e sensações. É a forma de conhecer o mundo através dos cinco sentidos.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main>
 <!-- /main column -->
@@ -616,6 +755,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","loop":false,"openEffect":"zoom","descPosition":"bottom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 
