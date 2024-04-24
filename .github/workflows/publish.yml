@@ -14,16 +14,14 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Install TexLive
-        run: |
-          sudo apt install texlive
-          tlmgr init-usertree
-          tlmgr option repository https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2021/tlnet-final
-          tlmgr install musixtex-fonts
-          tlmgr update --all --self
-
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
+
+      - name: Install fontes para musixtex
+        run: |
+          tlmgr install musixtex-fonts
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
