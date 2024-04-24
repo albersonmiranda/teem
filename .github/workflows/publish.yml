@@ -18,6 +18,7 @@ jobs:
         run: |
           sudo apt install texlive
           sudo tlmgr init-usertree
+          tlmgr option repository https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2021/
           sudo tlmgr install musixtex-fonts
           sudo tlmgr install musicography
 
