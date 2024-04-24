@@ -6,8 +6,9 @@ manuscript:
 
 format:
   html:
-    comments:
-      hypothesis: true
+    theme:
+      light: cosmo
+      dark: vapor
   docx: default
   pdf:
     documentclass: scrreprt
@@ -18,6 +19,3 @@ editor:
   render-on-save: true
 execute:
   freeze: auto
-
-
-

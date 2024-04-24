@@ -113,7 +113,7 @@ $$ {#eq-fracao}
 
 A atividade proposta consiste na exploração de conceitos de frações e equivalência a partir das figuras rítmicas e fórmulas de compasso da música [Acorda Pedrinho de Jovem Dionisio](https://open.spotify.com/intl-pt/track/2sUhjzuc6w4SRFwoC3LvXZ?si=594a3325c9c24baa). Essa música foi escolhida por três critérios. Primeiramente, como listado por @souto_interdisciplinaridade_2010, o tema deve ser algo conhecido dos alunos, e essa música alcançou grande popularidade entre as crianças brasileiras em plataformas de streaming entre 2022 e 2023. Em segundo lugar, a música possui uma melodia simples e muito marcada, quase rítmica, o que facilita a identificação das figuras rítmicas. Por fim, a partir do 5º compasso, onde os alunos irão trabalhar, a linha melódica é composta por apenas uma nota, ré, o que permite aos alunos focar exclusivamente na duração das notas, sem precisar de serem introduzidos às notas musicais.
 
-A atividade é composta por X etapas:
+A atividade é composta por 4 etapas:
 
 1. **Apresentação dos valores rítmicos**: O professor apresenta as figuras rítmicas, sua relação direta com frações e suas relações hierárquicas de duração, conforme descrito na seção anterior.
     - Recurso: mídia ou instrumento musical.
@@ -130,7 +130,11 @@ A 4ª etapa se inicia com o professor, juntamente com os alunos, realizando a di
 
 # DISCUSSÃO
 
+Através da atividade proposta, construída com base nos conceitos de interdisciplinaridade e integração com a arte, é possível explorar de maneira lúdica e interativa os conceitos de frações e equivalência. A música "Acorda Pedrinho" de Jovem Dionisio serve como uma ferramenta eficaz para a compreensão desses conceitos matemáticos, uma vez que sua melodia simples e marcada facilita a identificação das figuras rítmicas e a relação destas com as frações.
 
+A metodologia proposta, dividida em quatro etapas, proporciona aos alunos um aprendizado progressivo, começando pela apresentação dos valores rítmicos, passando pelo ditado rítmico, a classificação de grandeza das frações, até a aplicação prática na música. Essa abordagem permite aos alunos focar exclusivamente na duração das notas, sem a necessidade de introdução às notas musicais. Por outro lado, uma abordagem voltada à educação omnilateral poderia integrar ainda mais os dois conteúdos, trazendo também como produto final a introdução à teoria musical, sem perdas de qualidade no aprendizado matemático. Pelo contrário, o aprezendizado matemático seria reforçado melhor contextualizado e mais significativo.
+
+A atividade pode se mostrar eficaz, pois além de proporcionar o aprendizado dos conceitos matemáticos, também estimula a percepção musical e a criatividade dos alunos. Portanto, a interdisciplinaridade entre a matemática e a música é uma estratégia pedagógica valiosa, que pode ser explorada em futuras atividades educacionais.
 
 # REFERÊNCIAS {-}
 
