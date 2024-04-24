@@ -19,6 +19,7 @@ jobs:
           sudo apt install texlive
           tlmgr init-usertree
           tlmgr option repository https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2021/tlnet-final
+          tlmgr install xelatex
           tlmgr install musixtex-fonts
           tlmgr install musicography
 
