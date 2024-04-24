@@ -1,5 +1,6 @@
 ---
-title: Enriquecendo o ensino de frações através da integração da matemática e música
+title: Acorda Pedrinho, que hoje tem... frações de compasso?
+subtitle: Uma proposta de atividade interdisciplinar a partir de matemática e música
 author:
   name: Alberson Miranda
   orcid: https://orcid.org/0000-0001-9252-4175
