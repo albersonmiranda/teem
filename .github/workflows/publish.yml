@@ -20,7 +20,7 @@ jobs:
           tlmgr init-usertree
           tlmgr option repository https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2021/tlnet-final
           tlmgr install musixtex-fonts
-          tlmgr update --self
+          tlmgr update --all --self
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
