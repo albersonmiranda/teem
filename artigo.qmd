@@ -1,5 +1,5 @@
 ---
-title: Acorda Pedrinho, que hoje tem... frações de compasso?
+title: Acorda, Pedrinho, que hoje tem... frações de compasso?
 subtitle: Uma proposta de atividade interdisciplinar a partir de matemática e música
 author:
   name: Alberson Miranda
